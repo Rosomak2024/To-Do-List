@@ -1,8 +1,10 @@
 {
   "name": "to-do-list",
+  "source": "To_Do_list/index.html",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "devDependencies": {
     "parcel": "^2.6.0"
   },
