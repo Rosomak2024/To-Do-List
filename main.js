@@ -1,5 +1,6 @@
 const addLi = document.querySelector("ul");
-const addButton = document.querySelector("button");
+const addButton = document.querySelector(".btn");
+const deleteButton = document.querySelector(".btn_2");
 const input = document.querySelector("input");
 
 addButton.addEventListener("click", function inputMaker(e) {
@@ -7,6 +8,10 @@ addButton.addEventListener("click", function inputMaker(e) {
   addLi.appendChild(newInput);
   let text = input.value;
   newInput.innerHTML = text;
+});
 
-  e.preventDefault();
+deleteButton.addEventListener("click", function inputDelete() {
+  const liToRemove = document.querySelector("ul");
+  const lastElement = liToRemove.lastElementChild;
+  lastElement.remove();
 });
