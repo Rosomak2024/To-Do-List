@@ -1,7 +1,11 @@
 const addLi = document.querySelector("ul");
 const addButton = document.querySelector(".btn");
+const editButton = document.querySelector(".btn_1");
 const deleteButton = document.querySelector(".btn_2");
+const clearButton = document.querySelector(".btn_3");
 const input = document.querySelector("input");
+
+
 
 addButton.addEventListener("click", function inputMaker() {
   const newInput = document.createElement("li");
@@ -19,3 +23,9 @@ deleteButton.addEventListener("click", function inputDelete() {
   const lastElement = liToRemove.lastElementChild;
   lastElement.remove();
 });
+
+clearButton.addEventListener("click", function inputClear() {
+  input.value = "";
+});
+
+
