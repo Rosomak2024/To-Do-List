@@ -5,7 +5,6 @@ const addButton = document.querySelector(".btn");
 const editButton = document.querySelector(".btn_1");
 const deleteButton = document.querySelector(".btn_2");
 const input = document.querySelector("input");
-const checkbox = document.getElementById('done');
 
 addButton.addEventListener("click", function inputMaker() {
   const newInput = document.createElement("li");
@@ -16,9 +15,7 @@ addButton.addEventListener("click", function inputMaker() {
     addLi.appendChild(newInput);
     let text = input.value;
     newInput.innerHTML = text;
-    addLi.appendChild(newChecbox);
-    newChecbox.setAttribute("type","checkbox");
-    newChecbox.setAttribute("id","checbox");
+    
   }
 );
 
@@ -40,3 +37,6 @@ deleteButton.addEventListener("click", function inputDelete() {
   const lastElement = liToRemove.lastElementChild;
   lastElement.remove();
 });
+
+ 
+
