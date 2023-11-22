@@ -6,18 +6,17 @@ const editButton = document.querySelector(".btn_1");
 const deleteButton = document.querySelector(".btn_2");
 const input = document.querySelector("input");
 
-addButton.addEventListener("click", function inputMaker() {
+addButton.addEventListener("click", function () {
   const newInput = document.createElement("li");
-  const newChecbox = document.createElement("input")
-  // if (input.value === "") {
-  //   alert("Pozycja musi zawierać przynajmniej 1 znak");
-  // } else {
-    addLi.appendChild(newInput);
-    let text = input.value;
-    newInput.innerHTML = text;
+  addLi.appendChild(newInput);
+  let text = input.value;
+  newInput.innerHTML = text;
+  const newCheckbox = document.createElement('input');
+  newInput.appendChild(newCheckbox);
+  newCheckbox.dataset.
     
-  }
-);
+  
+});
 
 
 editButton.addEventListener("click", function inputEdit() {
