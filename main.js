@@ -8,15 +8,13 @@ const input = document.querySelector("input");
 
 addButton.addEventListener("click", function () {
   const newInput = document.createElement("li");
+  const newCheckbox = document.createElement("input");
   addLi.appendChild(newInput);
   let text = input.value;
   newInput.innerHTML = text;
-  const newCheckbox = document.createElement("input");
-
   newInput.appendChild(newCheckbox);
   newCheckbox.setAttribute("id", "check");
   newCheckbox.setAttribute("type", "checkbox");
-
   newCheckbox.value = "";
   console.log(test);
 
@@ -26,13 +24,13 @@ addButton.addEventListener("click", function () {
 editButton.addEventListener("click", function inputEdit() {
   const liToRemove = document.querySelector("ul");
   const lastElement = liToRemove.lastElementChild;
-  lastElement.remove();
   const newInput = document.createElement("li");
+  const newCheckbox = document.createElement("input");
+  lastElement.remove();
   addLi.appendChild(newInput);
   newInput.innerHTML = "";
   let text = input.value;
   newInput.innerHTML = text;
-  const newCheckbox = document.createElement("input");
   newInput.appendChild(newCheckbox);
   newCheckbox.setAttribute("id", "check");
   newCheckbox.setAttribute("type", "checkbox");
