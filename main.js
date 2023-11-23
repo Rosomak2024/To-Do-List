@@ -11,13 +11,17 @@ addButton.addEventListener("click", function () {
   addLi.appendChild(newInput);
   let text = input.value;
   newInput.innerHTML = text;
-  const newCheckbox = document.createElement('input');
-  newInput.appendChild(newCheckbox);
-  newCheckbox.dataset.
-    
-  
-});
+  const newCheckbox = document.createElement("input");
 
+  newInput.appendChild(newCheckbox);
+  newCheckbox.setAttribute("id", "check");
+  newCheckbox.setAttribute("type", "checkbox");
+
+  newCheckbox.value = "";
+  console.log(test);
+
+  // newCheckbox.style.visibility = "visible"
+});
 
 editButton.addEventListener("click", function inputEdit() {
   const liToRemove = document.querySelector("ul");
@@ -28,7 +32,11 @@ editButton.addEventListener("click", function inputEdit() {
   newInput.innerHTML = "";
   let text = input.value;
   newInput.innerHTML = text;
-  console.log(text);
+  const newCheckbox = document.createElement("input");
+  newInput.appendChild(newCheckbox);
+  newCheckbox.setAttribute("id", "check");
+  newCheckbox.setAttribute("type", "checkbox");
+  newCheckbox.value = "";
 });
 
 deleteButton.addEventListener("click", function inputDelete() {
@@ -36,6 +44,3 @@ deleteButton.addEventListener("click", function inputDelete() {
   const lastElement = liToRemove.lastElementChild;
   lastElement.remove();
 });
-
- 
-
