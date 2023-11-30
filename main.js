@@ -1,44 +1,41 @@
 // * Wersja pierwsza - bez array i obiketów działa bez edita.
 
-const addLi = document.querySelector("ul");
+const ulParrentElement = document.querySelector("ul");
 const addButton = document.querySelector(".btn");
 const editButton = document.querySelector(".btn_1");
 const deleteButton = document.querySelector(".btn_2");
 const input = document.querySelector("input");
 
-addButton.addEventListener("click", function () {
-  const newInput = document.createElement("li");
-  const newCheckbox = document.createElement("input");
-  addLi.appendChild(newInput);
-  let text = input.value;
-  newInput.innerHTML = text;
-  newInput.appendChild(newCheckbox);
-  newCheckbox.setAttribute("id", "check");
-  newCheckbox.setAttribute("type", "checkbox");
-  newCheckbox.value = "";
-  console.log(test);
 
-  // newCheckbox.style.visibility = "visible"
+const tasks = [];
+
+addButton.addEventListener("click", () => {
+  const li = document.createElement("li");
+  // const label = document.createElement("label");
+  const checkbox = document.createElement("input");
+
+  ulParrentElement.appendChild(li);
+  // ulParrentElement.appendChild(label);
+  ulParrentElement.appendChild(checkbox);
+  li.setAttribute("id", `list_Element_${tasks.length}`);
+  // label.setAttribute("id", `list_Element_Name_${tasks.length}`);
+  checkbox.setAttribute("type", "checkbox");
+  checkbox.setAttribute("id", `checkbox_Element_${tasks.length}`);
+  li.innerHTML = input.value;
+  tasks.push(li);
+  input.value = "";
+
 });
 
-editButton.addEventListener("click", function inputEdit() {
-  const liToRemove = document.querySelector("ul");
-  const lastElement = liToRemove.lastElementChild;
-  const newInput = document.createElement("li");
-  const newCheckbox = document.createElement("input");
-  lastElement.remove();
-  addLi.appendChild(newInput);
-  newInput.innerHTML = "";
-  let text = input.value;
-  newInput.innerHTML = text;
-  newInput.appendChild(newCheckbox);
-  newCheckbox.setAttribute("id", "check");
-  newCheckbox.setAttribute("type", "checkbox");
-  newCheckbox.value = "";
-});
+deleteButton.addEventListener('click',()=> {
+  const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
-deleteButton.addEventListener("click", function inputDelete() {
-  const liToRemove = document.querySelector("ul");
-  const lastElement = liToRemove.lastElementChild;
-  lastElement.remove();
-});
+    
+    checkedCheckboxes.forEach(element => {
+      ulParrentElement.removeChild(element.previousSibling);
+      ulParrentElement.removeChild(element);
+    });
+  
+    
+  });
+  
