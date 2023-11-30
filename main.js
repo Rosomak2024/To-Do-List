@@ -6,7 +6,6 @@ const editButton = document.querySelector(".btn_1");
 const deleteButton = document.querySelector(".btn_2");
 const input = document.querySelector("input");
 
-
 const tasks = [];
 
 addButton.addEventListener("click", () => {
@@ -24,18 +23,15 @@ addButton.addEventListener("click", () => {
   li.innerHTML = input.value;
   tasks.push(li);
   input.value = "";
-
 });
 
-deleteButton.addEventListener('click',()=> {
-  const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+deleteButton.addEventListener("click", () => {
+  const checkedCheckboxes = document.querySelectorAll(
+    'input[type="checkbox"]:checked'
+  );
 
-    
-    checkedCheckboxes.forEach(element => {
-      ulParrentElement.removeChild(element.previousSibling);
-      ulParrentElement.removeChild(element);
-    });
-  
-    
+  checkedCheckboxes.forEach((element) => {
+    ulParrentElement.removeChild(element.previousSibling);
+    ulParrentElement.removeChild(element);
   });
-  
+});
