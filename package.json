@@ -1,17 +1,8 @@
 {
-  "name": "to-do-list",
-  "source": "To_Do_list/index.html",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-
-  "devDependencies": {
-    "parcel": "^2.6.0"
+  "dependencies": {
+    "parcel": "^2.11.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "start": "parcel index.html"
+  }
 }
