@@ -1,13 +1,11 @@
-// * Wersja pierwsza - bez array i obiketów // First version - without arrays and objects.
 const ulParrentElement = document.querySelector("ol");
 const addButton = document.querySelector(".btn");
 const editButton = document.querySelector(".btn_1");
 const deleteButton = document.querySelector(".btn_2");
 const input = document.getElementById("text");
 const tasks = [];
-addButton.addEventListener("click", (e)=>{
+addButton.addEventListener("click", ()=>{
     const li = document.createElement("li");
-    // const label = document.createElement("label");
     const checkbox = document.createElement("input");
     if (input.value !== "") {
         ulParrentElement.appendChild(li);
@@ -19,52 +17,33 @@ addButton.addEventListener("click", (e)=>{
         tasks.push(li);
         input.value = "";
     } else alert("Musisz wpisa\u0107 tekst");
-    const checkbox_checked = document.querySelector('input[type="checkbox"]');
-    console.log(checkbox.checked);
-    checkbox_checked.addEventListener("change", function(e) {
-        if (e.isTrusted) {
-            deleteButton.disabled = true;
-            editButton.disabled = true;
-            addButton.disabled = false;
-        }
-    });
 });
-deleteButton.addEventListener("click", (e)=>{
+deleteButton.addEventListener("click", ()=>{
     const checkedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
-    if (checkedCheckbox) {
-        deleteButton.disabled = false;
-        editButton.disabled = false;
-        addButton.disabled = true;
-    }
     checkedCheckbox.forEach((element)=>{
         ulParrentElement.removeChild(element.previousSibling);
         ulParrentElement.removeChild(element);
     });
 });
-editButton.addEventListener("click", function(e) {
+editButton.addEventListener("click", ()=>{
     const checkedCheckbox_toEdit = document.querySelector('input[type="checkbox"]:checked');
-    if (checkedCheckbox_toEdit) {
-        deleteButton.disabled = false;
-        editButton.disabled = false;
-        addButton.disabled = true;
-    }
     if (input.value == "") alert("Pole edycji jest puste");
-    else if (e.isTrusted) {
+    else {
         checkedCheckbox_toEdit.previousElementSibling.innerText = input.value;
         input.value = "";
     }
-}); // const checkbox = document.querySelector('input[type="checkbox"]');
- // console.log(checkbox.checked);
- // checkbox.addEventListener('change',function(e){
- //   if(e.isTrusted){
- // deleteButton.disabled = true;
- // editButton.disabled = true;
- // addButton.disabled = false;}
- // else if(checkedCheckbox) {
- //   deleteButton.disabled = false;
- //   editButton.disabled = false;
- //   addButton.disabled = true;
- // }
- // });
+});
+document.addEventListener("click", function(e) {
+    const target = e.target.closest("input[type='checkbox']");
+    if (target) {
+        addButton.disabled = true;
+        editButton.disabled = false;
+        deleteButton.disabled = false;
+    } else if (input.value !== "") {
+        addButton.disabled = false;
+        editButton.disabled = true;
+        deleteButton.disabled = true;
+    }
+});
 
 //# sourceMappingURL=index.c4775257.js.map
