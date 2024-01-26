@@ -1,4 +1,4 @@
-const ulParrentElement = document.querySelector("ol");
+const olParrentElement = document.querySelector("ol");
 const addButton = document.querySelector(".btn");
 const editButton = document.querySelector(".btn_1");
 const deleteButton = document.querySelector(".btn_2");
@@ -8,8 +8,8 @@ addButton.addEventListener("click", ()=>{
     const li = document.createElement("li");
     const checkbox = document.createElement("input");
     if (input.value !== "") {
-        ulParrentElement.appendChild(li);
-        ulParrentElement.appendChild(checkbox);
+        olParrentElement.appendChild(li);
+        olParrentElement.appendChild(checkbox);
         li.setAttribute("id", `list_Element_${tasks.length}`);
         checkbox.setAttribute("type", "checkbox");
         checkbox.setAttribute("id", `checkbox_Element_${tasks.length}`);
@@ -21,8 +21,8 @@ addButton.addEventListener("click", ()=>{
 deleteButton.addEventListener("click", ()=>{
     const checkedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');
     checkedCheckbox.forEach((element)=>{
-        ulParrentElement.removeChild(element.previousSibling);
-        ulParrentElement.removeChild(element);
+        olParrentElement.removeChild(element.previousSibling);
+        olParrentElement.removeChild(element);
     });
 });
 editButton.addEventListener("click", ()=>{
