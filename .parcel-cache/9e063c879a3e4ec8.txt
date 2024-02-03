@@ -9,13 +9,13 @@
 78C:\Users\User\To-Do-List\node_modules\lmdb\dependencies\v8\v8-fast-api-calls.h133501568288902645 0
 37C:\Users\User\To-Do-List\package.json133502419356999633 0
 60C:\Users\User\To-Do-List\node_modules\escalade\sync\index.js133501568136558227 0
-35C:\Users\User\To-Do-List\.gitignore133507419499046558 0
+35C:\Users\User\To-Do-List\.gitignore133509282349830989 0
 52C:\Users\User\To-Do-List\node_modules\@parcel\plugin133501568142153175 1
 80C:\Users\User\To-Do-List\node_modules\svgo\plugins\removeUselessStrokeAndFill.js133501568268291716 0
 53C:\Users\User\To-Do-List\node_modules\posthtml-render133501568148137429 1
 69C:\Users\User\To-Do-List\node_modules\source-map\lib\binary-search.js133501568162793217 0
 74C:\Users\User\To-Do-List\node_modules\utility-types\dist\mapped-types.d.ts133501568196023113 0
-32C:\Users\User\To-Do-List\main.js133509154254684937 0
+32C:\Users\User\To-Do-List\main.js133512824106558410 0
 56C:\Users\User\To-Do-List\node_modules\svgo\lib\svgo.d.ts133501568204984952 0
 44C:\Users\User\To-Do-List\node_modules\base-x133501568140785708 1
 81C:\Users\User\To-Do-List\node_modules\css-tree\cjs\syntax\node\MediaCondition.cjs133501568265353528 0
@@ -35,7 +35,7 @@
 75C:\Users\User\To-Do-List\node_modules\css-tree\lib\tokenizer\TokenStream.js133501568330936727 0
 76C:\Users\User\To-Do-List\node_modules\cosmiconfig\dist\ExplorerSync.d.ts.map133501568180020582 0
 94C:\Users\User\To-Do-List\node_modules\css-select\node_modules\entities\lib\esm\encode.d.ts.map133501568231074197 0
-29C:\Users\User\To-Do-List\dist133509154255971413 1
+29C:\Users\User\To-Do-List\dist133512824107256537 1
 99C:\Users\User\To-Do-List\node_modules\csso\node_modules\css-tree\cjs\tokenizer\OffsetToLocation.cjs133501568268201895 0
 63C:\Users\User\To-Do-List\node_modules\svgo\plugins\sortAttrs.js133501568272959903 0
 42C:\Users\User\To-Do-List\package-lock.json133501568921145599 0
@@ -714,7 +714,7 @@
 114C:\Users\User\To-Do-List\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional133501568452518445 0
 63C:\Users\User\To-Do-List\node_modules\htmlparser2\lib\Parser.js133501568143256296 0
 68C:\Users\User\To-Do-List\node_modules\update-browserslist-db\LICENSE133501568119813284 0
-47C:\Users\User\To-Do-List\dist\index.c4775257.js133509154255931536 0
+47C:\Users\User\To-Do-List\dist\index.c4775257.js133512824107126880 0
 69C:\Users\User\To-Do-List\node_modules\caniuse-lite\data\regions\TJ.js133501568398478054 0
 80C:\Users\User\To-Do-List\node_modules\@parcel\transformer-image\src\loadSharp.js133501568149676273 0
 57C:\Users\User\To-Do-List\node_modules\type-fest\base.d.ts133501568155611998 0
@@ -1785,7 +1785,7 @@
 63C:\Users\User\To-Do-List\node_modules\csso\lib\replace\property133501568261372876 1
 97C:\Users\User\To-Do-List\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax133501568264016906 1
 63C:\Users\User\To-Do-List\node_modules\is-arrayish\.istanbul.yml133501568152053429 0
-52C:\Users\User\To-Do-List\dist\To-Do-List.3464ddca.js133509151712779633 0
+52C:\Users\User\To-Do-List\dist\To-Do-List.3464ddca.js133512814405917544 0
 76C:\Users\User\To-Do-List\node_modules\@babel\helper-validator-identifier\lib133501568161243570 1
 71C:\Users\User\To-Do-List\node_modules\domelementtype\lib\index.d.ts.map133501568160125486 0
 79C:\Users\User\To-Do-List\node_modules\node-gyp-build-optional-packages\index.js133501568140317090 0
@@ -4960,7 +4960,7 @@
 88C:\Users\User\To-Do-List\node_modules\@parcel\transformer-babel\src\remapAstLocations.js133501568189171674 0
 76C:\Users\User\To-Do-List\node_modules\@parcel\transformer-babel\src\types.js133501568193714454 0
 76C:\Users\User\To-Do-List\node_modules\@parcel\transformer-babel\src\utils.js133501568198080204 0
-56C:\Users\User\To-Do-List\dist\To-Do-List.3464ddca.js.map133509151712819522 0
+56C:\Users\User\To-Do-List\dist\To-Do-List.3464ddca.js.map133512814405967397 0
 87C:\Users\User\To-Do-List\node_modules\@parcel\transformer-babel\lib\BabelTransformer.js133501568155810142 0
 80C:\Users\User\To-Do-List\node_modules\@parcel\transformer-babel\lib\constants.js133501568170800393 0
 75C:\Users\User\To-Do-List\node_modules\@parcel\transformer-babel\lib\flow.js133501568176261422 0
@@ -5933,5 +5933,5 @@
 49C:\Users\User\To-Do-List\node_modules\.bin\semver133501568452428690 0
 53C:\Users\User\To-Do-List\node_modules\.bin\semver.ps1133501568452418745 0
 51C:\Users\User\To-Do-List\node_modules\.bin\svgo.cmd133501568452428690 0
-51C:\Users\User\To-Do-List\dist\index.c4775257.js.map133509154255961449 0
-40C:\Users\User\To-Do-List\dist\index.html133509151712789596 0
+51C:\Users\User\To-Do-List\dist\index.c4775257.js.map133512824107246654 0
+40C:\Users\User\To-Do-List\dist\index.html133512814405698113 0
